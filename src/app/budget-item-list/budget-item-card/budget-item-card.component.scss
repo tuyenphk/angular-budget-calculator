@@ -5,6 +5,13 @@
   width: 100%;
   position: relative;
 
+  &:hover {
+    .x-icon-button {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
   .x-icon-button {
     position: absolute;
     height: 34px;
@@ -18,14 +25,14 @@
     top: -17px; //this has to be half of the height
 
     // timing function using
-    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
     transform: scale(0);
-  }
+    opacity: 0;
 
-  &:hover {
-    .x-icon-button {
-      opacity: 1;
-      transform: scale(1);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }
@@ -37,6 +44,11 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: darken($light-grey, 2%);
+  }
 
   .description {
     display: flex;
