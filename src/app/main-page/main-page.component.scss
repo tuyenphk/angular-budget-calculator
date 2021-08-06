@@ -39,7 +39,20 @@
     }
 
     &.red {
-      color: $red;
+      color: lighten($red, 12%);
     }
+  }
+}
+
+.add-item-section {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  .add-item-container {
+    width: 680px;
+
+
   }
 }
