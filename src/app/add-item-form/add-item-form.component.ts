@@ -15,6 +15,13 @@ export class AddItemFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // if (this.item){
+    //   // this means that an existing item object was passed into this component
+    //   // therefore this is not a new item
+    //   this.isNewItem = false;
+    // } else {
+    //   this.isNewItem = true;
+    // }
   }
 
   onSubmit(form: NgForm){
