@@ -11,7 +11,7 @@ import { BudgetItemCardComponent } from './budget-item-list/budget-item-card/bud
 import { FormsModule } from '@angular/forms';
 import { EditItemModelComponent } from './edit-item-model/edit-item-model.component';
 
-import { MatSliderModule } from '@angular/material/slider';
+// import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { MatSliderModule } from '@angular/material/slider';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    // MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
